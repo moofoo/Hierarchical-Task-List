@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hierarchical-task-list/static/css/main.fee16f9f.chunk.css",
+    "main.js": "/hierarchical-task-list/static/js/main.15d5dd51.chunk.js",
+    "main.js.map": "/hierarchical-task-list/static/js/main.15d5dd51.chunk.js.map",
+    "runtime~main.js": "/hierarchical-task-list/static/js/runtime~main.c7943657.js",
+    "runtime~main.js.map": "/hierarchical-task-list/static/js/runtime~main.c7943657.js.map",
+    "static/js/2.3f07414a.chunk.js": "/hierarchical-task-list/static/js/2.3f07414a.chunk.js",
+    "static/js/2.3f07414a.chunk.js.map": "/hierarchical-task-list/static/js/2.3f07414a.chunk.js.map",
+    "index.html": "/hierarchical-task-list/index.html",
+    "precache-manifest.791f39d35023c48217303b86cd0cc899.js": "/hierarchical-task-list/precache-manifest.791f39d35023c48217303b86cd0cc899.js",
+    "service-worker.js": "/hierarchical-task-list/service-worker.js",
+    "static/css/main.fee16f9f.chunk.css.map": "/hierarchical-task-list/static/css/main.fee16f9f.chunk.css.map"
+  }
+}
