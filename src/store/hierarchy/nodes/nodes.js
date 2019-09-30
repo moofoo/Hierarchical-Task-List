@@ -42,7 +42,12 @@ export default (state = {}, action) => {
     return state;
   }
 
-  const { id, parent } = payload;
+  let { id, parent } = payload;
+
+  id = id.toString();
+  if (parent) {
+    parent = parent.toString();
+  }
 
   switch (type) {
     case UPDATE_NODE:

@@ -467,7 +467,6 @@ export const createOrderedNodeDataSelector = path => {
 
         orderedNodes.push({
           ...node,
-          index,
           parent: nodeData[node.parent],
           descendants: getAllDescendantIds(nodeData, node.id),
           ancestors: getParentIds(nodeData, node.id),

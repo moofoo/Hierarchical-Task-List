@@ -15,15 +15,6 @@ export const orderedNodeList = (rootIds, allNodes, o) => {
   return ordered;
 };
 
-export const getPath = (node, path = []) => {
-  if (node.parent) {
-    path.push(node.parent.id);
-    path = getPath(node.parent, path);
-  }
-
-  return path;
-};
-
 export const getAllDescendantIds = (state, id) =>
   state[id].children.reduce(
     (acc, childId) => [...acc, childId, ...getAllDescendantIds(state, childId)],
@@ -207,7 +198,6 @@ export const getIndexes = nodes => {
 
 export const reducerMoveNode = (state, payload) => {
   if (payload.afterIndex !== undefined) {
-    console.log(state, payload);
     const indexNode = _.find(state, n => n.id === payload.afterIndex);
 
     if (indexNode.children.length && payload.makeChild) {

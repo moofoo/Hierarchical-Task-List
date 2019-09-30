@@ -1,10 +1,16 @@
-const BINDING_SET = 'HIERARCHY/BINDING/SET';
+export const BINDING_SET = 'HIERARCHY/BINDING/SET';
 
 const reducer = (state = {}, action) => {
   const { type, payload } = action;
   switch (type) {
     case BINDING_SET: {
-      const { path, createAction, updateAction, deleteAction, clearAction } = payload;
+      const {
+        path,
+        createAction,
+        updateAction,
+        deleteAction,
+        clearAction
+      } = payload;
       const options = payload.options || {};
 
       return {
@@ -14,8 +20,8 @@ const reducer = (state = {}, action) => {
           clearAction,
           createAction,
           deleteAction,
-          updateAction,
-        },
+          updateAction
+        }
       };
     }
     default: {
@@ -26,7 +32,7 @@ const reducer = (state = {}, action) => {
 
 export const setBinding = payload => ({
   payload,
-  type: BINDING_SET,
+  type: BINDING_SET
 });
 
 export default reducer;

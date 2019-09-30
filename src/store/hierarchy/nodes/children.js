@@ -2,7 +2,11 @@ import { ADD_CHILD, REMOVE_CHILD, ORDER_CHILD } from './types';
 
 export default (state = [], action) => {
   let { type } = action;
-  const { id, at, first, before, after } = action.payload;
+  let { id, at, first, before, after } = action.payload;
+
+  id = id.toString();
+  before = before ? before.toString() : before;
+  after = after ? after.toString() : after;
 
   if (id === undefined) {
     return state;
